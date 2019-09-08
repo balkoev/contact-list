@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Profile
+from .models import UserProfile
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
 
 class UserInline(admin.StackedInline):
-  model = Profile
+  model = UserProfile
   can_delete = False
   verbose_name_plural = 'Доп. информация'
  
